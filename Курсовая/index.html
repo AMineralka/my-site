@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body class="" style=" background-color: white;">
+    
+    
+    <!-- start nav -->
+        <nav class="navbar navbar-expand-lg p-0 blockContainer">
+            <div class="container-fluid mainColor navHeight1 d-flex  navHalf1 p-0 w-75" style="height: 4em;">
+              <span class="navbar-brand mainColor marginNone animated fadeIn wow" style="font-size: 22px;" href="Plumbing">Plumbing</span>
+              <ul class="navbar-nav container-fluid navCont1 d-flex justify-content-between" style="padding-right: 36px;">
+                <li class="nav-item animated fadeIn wow" data-wow-delay="0.2s">
+                  <a class="nav-link mainColor button" href="#OurServices">Our Services</a>
+                </li>
+                <li class="nav-item animated fadeIn wow" data-wow-delay="0.4s">
+                  <a class="nav-link mainColor button" href="#Innovations">Innovations</a>
+                </li>
+                <li class="nav-item animated fadeIn wow" data-wow-delay="0.6s">
+                  <a class="nav-link mainColor button" href="#CaseStudies">Case Studies</a>
+                </li>
+                <li class="nav-item animated fadeIn wow" data-wow-delay="0.8s">
+                  <a class="nav-link mainColor button" href="#Advantages">Advantages</a>
+                </li>
+                <li class="nav-item animated fadeIn wow" data-wow-delay="1s">
+                  <a class="nav-link mainColor button" href="#Contact">Contact</a>
+                </li>
+              </ul>
+              <!-- выпадающая кнопка -->
+              <div class="dropdown navCont2">
+                <button class="btn dropdown-toggle mainColor2" type="button" id="dropdownMenuButton1" style="margin-right:2em; border: none;" data-bs-toggle="dropdown" aria-expanded="false">
+                </button>
+                <ul class="dropdown-menu" style="padding: 0;" aria-labelledby="dropdownMenuButton1">
+                  <li class="nav-item">
+                    <a class="nav-link mainColor button" href="AboutUs">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mainColor button" href="Achievments">Achievments</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mainColor button" href="Workers">Workers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mainColor button" href="Prices">Prices</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mainColor button" href="Contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="container-fluid mainColor2 navHeight2 w-25 navHalf2" style="height: 4em;">
+              <span class="text-center w-100 animated fadeIn wow" data-wow-delay="0.4s" style="margin-right: 36px;">Plumbing Services Today!</span>
+            </div>
+        </nav>
+    <!-- end nav -->
+    <!-- start head body -->
+    <div style=" background: url(img/bg.jpg); background-position: bottom;">
+      <div>
+        <div id="particles-js"></div>
+      </div>
+      <div class="d-flex blockContainer flex-wrap">
+        <div class="d-flex pt-4 align-items-center blockW100" style="width: 60%">
+            <p class="textColor titleSize animated fadeIn wow" data-wow-delay="0.4s" style="font-size: 4em; line-height: 1em;">
+              <span style="font-weight:100;">PROFESSIONAL</span> <br>
+              <span style="font-weight:600">PLUMBING SERVICES</span>
+            </p>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blockW100 animated slideInRight wow" data-wow-duration="1.6s" style="width: 40%; height: 38em;">
+            <div class="p-4 secondColor blockW100" style="width: 20em; margin-top: 3em;">
+                <div>
+                    <p class="textColor text-center mb-4" style="font-size: 1em;">
+                    
+                        <span style="font-weight:650; font-size: 42px; line-height: 1.3em;">CONTACT US</span><br>
+                        <span style="font-weight:100;">It won't take long. We look forward to your appeal.</span> 
+                    </p>
+                </div>
+                <form id="myForm" class="needs-validation">
+                  <div class="d-flex flex-wrap justify-content-between ">
+                  
+                    <input type="text" class="form-control mb-1 border border-secondary" placeholder="Name" style="height: 2.7em; border-radius: 0em; background-color: white;" required>
+                    <input type="email" class="form-control mb-1 border border-secondary" placeholder="Email" style="height: 2.7em; border-radius: 0em; background-color: white;" required>
+                    <input type="tel" class="form-control mb-1 border border-secondary" placeholder="Phone number" style="height: 2.7em; border-radius: 0em; background-color: white;" required>
+                    <textarea name="text" id="" cols="100%" rows="4" class="mb-3 border border-secondary" style="resize:none; border-radius: 0em; background-color: white;" placeholder="Comment" required></textarea>
+                    <button class="btn w-100 realButton" style="height: 4em; background-color: #1A4780; color:white; border-radius:0;" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">SEND INFO</button>
+                    
+                  </div>
+                  
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- end head body -->
+    <div class="blockContainer">
+    <!-- start services -->
+      
+      <div class="pt-5" id="OurServices">
+        
+        <div class="text-center mb-4 animated fadeIn wow" data-wow-delay="0.3s" style="line-height: 1.3em;"><!--title -->
+          <span class="textColorSecond fw-bold" style="font-size: 2.4em;">OUR SERVICES</span> <br>
+          <span style="font-size: 1em;">We offer any type of High-Quality Plumbing and HVAC Services</span>
+        </div>
+        <div class="d-flex justify-content-between flex-wrap justifyCenter"><!-- boxes -->
+          <div class="text-center blockWidth animated fadeInLeft wow" data-wow-delay="0.2s" style="width:25em; line-height: 1.2em;">
+              <div><img src="./img/drop.png" alt="" style="width:10em;"></div>
+              <div>
+                <p class="textColorSecond mt-4" style="font-size: 1.8em;">PLUMBING</p>
+                <p>If you’re looking for top-of-the-line plumbing services, you’re in the right place. Our valued customers can take advantage of our numerous plumbing services, as well as the collective experience of our expert team. Our comprehensive plumbing services include a lot of services. Besides, we’re proud to provide the local community with reliable appliance installation.</p>
+              </div>
+          </div>
+          <div class="text-center blockWidth animated fadeInUp wow" data-wow-delay="0.4s" style="width:25em; line-height: 1.2em;">
+            <div><img src="./img/pipe.png" alt="" style="width:10em;"></div>
+            <div>
+              <p class="textColorSecond mt-4" style="font-size: 1.8em;">DRAIN CLEANING</p>
+              <p>While some property owners use chemical drain cleaners to maintain clean pipes, the seasoned professionals at our company to not recommend this method. Our team only uses the safest methods when performing sewer line cleaning, and we’ll never compromise your plumbing or your health with our drain cleaning services.</p>
+            </div>
+          </div>
+          <div class="text-center blockWidth animated fadeInRight wow" data-wow-delay="0.6s" style="width:25em; line-height: 1.2em;">
+            <div><img src="./img/wrench.png" alt="" style="width:10em;"></div>
+            <div>
+              <p class="textColorSecond mt-4" style="font-size: 1.8em;">SEWER LINE REPAIR</p>
+              <p>Our workers are a team of well-versed experts with over 38 years of experience. If you have a mainline sewer issue, we can help. We take a no-nonsense approach to making sure your household’s water and waste goes to the right place every time. Our incredible, certified professionals are confident they can get your home back in running order as quickly as possible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end services -->
+      <!-- start solutions -->
+      <div class="d-flex mainColor2 servicesHeight mt-5 solCont1" style="height: 26em; line-height: 1.3em;" id="Innovations"><!-- start solutions -->
+        <div class="text-end d-flex justify-content-start animated slideInLeft wow" data-wow-duration="1.6s" style="padding-right: 4em;"><!--image-->
+          <img src="./img/innovative plumbing solutions.jpg" alt="" class="imgSize" align="left" style="height:100%;">
+        </div>
+        <div class="mt-4 "><!--main-->
+          <div><!--title-->
+            <span class="textColorFirst fw-bold animated fadeIn wow" data-wow-delay="0.1s" style="font-size: 2.4em; line-height: 0.8em;">INNOVATIVE PLUMBING SOLUTIONS</ы>
+          </div>
+          <div class="mt-4 lineHeight" style="line-height: 1.4em;"><!--content-->
+            <p>
+              <h4 class=" animated fadeIn wow" data-wow-delay="0.3s">You need this plumbing innovations for a healthy home</h4>
+            </p>
+            <span style="font-size:1.1em;" class=" animated fadeIn wow" data-wow-delay="0.5s">Finding customized solutions for your individual homes’ needs is important to us at Full Spectrum Plumbing. Technology and technique is changing every day, and staying on top of those trends and updates is the most effective way to serve our customers with the quality they have come to expect from Full Spectrum Plumbing. Technological advancements also have had an impact on water filtration...for the whole house and at point-of-use. Water filtration allows you to avoid germs that build up on all faucets. It filters out natural contaminants, which creates a more hygienic home. It's important that filter replacements are done on a routine basis to ensure that contaminants are being removed.</span>
+          </div>
+        </div>
+      </div>
+      <!-- adapt -->
+      <div class="d-flex mainColor2 servicesHeight1 mt-5 solCont2" style="height: 30em; line-height: 1.5em;"><!-- start solutions -->
+        
+        <div class="mt-4 "><!--main-->
+          <div class="text-center"><!--title-->
+            <span class="textColorFirst fw-bold animated fadeIn wow" data-wow-delay="0.1s" style="font-size: 2.4em;">INNOVATIVE PLUMBING SOLUTIONS</ы>
+          </div>
+            <div class="mt-4 mb-3 lineHeight" style="line-height: 1.7em;"><!--content-->
+              <img src="./img/innovative plumbing solutions.jpg" alt="" class="imgSize animated fadeIn wow" data-wow-delay="0.2s" align="left" style="margin-right: 1em; margin-bottom: 1em;">
+              <p>
+                <h4 class=" fadeIn wow" data-wow-delay="0.3s">You need this plumbing innovations for a healthy home</h4>
+              </p>
+              <span class="fontSize animated fadeIn wow" data-wow-delay="0.5s" style="font-size: 1.1em;">Finding customized solutions for your individual homes’ needs is important to us at Full Spectrum Plumbing. Technology and technique is changing every day, and staying on top of those trends and updates is the most effective way to serve our customers with the quality they have come to expect from Full Spectrum Plumbing. Technological advancements also have had an impact on water filtration...for the whole house and at point-of-use. Water filtration allows you to avoid germs that build up on all faucets. It filters out natural contaminants, which creates a more hygienic home. It's important that filter replacements are done on a routine basis to ensure that contaminants are being removed.</span>
+            </div>    
+          </div>
+        </div>
+      <!--end solutions-->
+      <!--start studies-->
+      <div class="" style="margin-bottom: 5.2em; padding-top:1.4em;" id="CaseStudies">
+        <div class="text-center mt-5 animated fadeInRight wow" data-wow-delay="0.1s" style="line-height: 1.3em;"><!--title -->
+          <span class="textColorSecond fw-bold" style="font-size: 2.4em;">CASE STUDIES</span> <br>
+          <span style="font-size: 1em;">We offer only the best services. Take a look at the reviews of our customers.</span>
+        </div>
+        <div class="d-flex justify-content-between justifyCenter flex-wrap mt-5"><!-- boxes -->
+          <div class="text-center border1 p-4 pt-5 pb-5 mb-4 studWidth textColorSecond animated fadeInRight wow" data-wow-delay="0.2s" style="width:25em;">
+            <span>Installed Flow Tech and Water Treatment System. Went over all my research and notes and explained how everything worked. Very professional and also "listened" to questions and made us feel very comfortable.</span>
+          </div>
+          <div class="text-center border1 p-4 pt-5 pb-5 mb-4 studWidth textColorSecond animated fadeInRight wow" data-wow-delay="0.3s" style="width:25em;">
+            <span>Really great service. We had been dealing with the serious issue in our shower since we moved in. He came in a took a look, explained what was going on and made the repair. Nailed it!  Very satisfied!</span>
+          </div>
+          <div class="text-center border1 p-4 pt-5 pb-5 mb-4 studWidth textColorSecond animated fadeInRight wow" data-wow-delay="0.4s" style="width:25em;">
+            <span>What a great experience! The plumber showed up on time and was very professional. Came in with shoe covers and gloves and had a mask to wear if we asked him to. Did the job and cleaned up afterwards. Would definitely recommend!</ызф>
+          </div>
+        </div>
+      </div>
+      <!--end studies-->
+      <!--start quality-->
+      <div class="d-flex secondColor servicesHeight mt-5 solCont1" style="height: 26em; line-height: 1.3em;" id="Advantages"><!-- start solutions -->
+        <div class="mt-4 text-end"><!--main-->
+          <div><!--title-->
+            <span class="textColorFirst fw-bold animated fadeIn wow" data-wow-delay="0.1s" style="font-size: 2.4em; line-height: 1em;">QUALITY SERVICES, QUALITY RESULTS</span>
+          </div>
+          <div class=" lineHeight" style="line-height: 1.4em;"><!--content-->
+            <p>
+              <h4 class=" animated fadeIn wow" data-wow-delay="0.3s">We work fast and efficiently, never motivated to take a little longer just to kick up our earnings.</h4>
+            </p>
+            <span style="font-size:1.1em;" class=" animated fadeIn wow" data-wow-delay="0.5s">Courtesy may not be the first thing people think of when it comes to plumbing, but for us, it's one of the most important tools we carry.
+              Nothing wears on homeowners like the idea of handling plumbing problems. From the water heater to sewer line, we take the pressure off of you (and put it back in your shower lines). We pride ourselves on offering the most up-to-date and efficient cooling system technologies. Our plumbers are the most recognized professionals in the world because we’re committed to amazing service and nothing wears on homeowners like the idea of handling plumbing problems. Our core values are the pillars of our success. These values drive our daily decisions. </span>
+              
+          </div>
+        </div>
+        <div class="text-end d-flex justify-content-end align-items-center" style="padding-left: 4em;"><!--image-->
+          <img src="./img/quality services.jpg" alt="" class="imgSize animated slideInRight wow" data-wow-duration="1.6s" align="right" style="height:100%;">
+        </div>
+      </div>
+      <!-- adapt -->
+      <div class="d-flex secondColor servicesHeight1 mt-5 solCont2" style="height: 30em; line-height: 1.5em;"><!-- start solutions -->
+        
+        <div class="mt-4 "><!--main-->
+          <div class="text-center"><!--title-->
+            <span class="textColorFirst fw-bold animated fadeIn wow" data-wow-delay="0.1s" style="font-size: 2.4em;">QUALITY SERVICES, QUALITY RESULTS</span>
+          </div>
+            <div class="mt-4 mb-3 lineHeight" style="line-height: 1.7em;"><!--content-->
+              <img src="./img/quality services.jpg" alt="" class="imgSize align-self-end animated fadeIn wow" data-wow-delay="0.2s" align="right" style="height:100%; margin-left: 1em; margin-bottom: 1em; ">
+              <p>
+                <h4 class=" animated fadeIn wow" data-wow-delay="0.3s">We work fast and efficiently, never motivated to take a little longer just to kick up our earnings.</h4>
+              </p>
+              <span style="font-size:1em;" class=" animated fadeIn wow" data-wow-delay="0.5s">Courtesy may not be the first thing people think of when it comes to plumbing, but for us, it's one of the most important tools we carry.
+                Nothing wears on homeowners like the idea of handling plumbing problems. From the water heater to sewer line, we take the pressure off of you (and put it back in your shower lines). We pride ourselves on offering the most up-to-date and efficient cooling system technologies. Our plumbers are the most recognized professionals in the world because we’re committed to amazing service and nothing wears on homeowners like the idea of handling plumbing problems. Our core values are the pillars of our success. These values drive our daily decisions. </span>
+                
+            </div>    
+          </div>
+        </div>
+      <!--end quality-->
+      <!-- start prices -->
+      <div class="d-flex justify-content-between">
+        <div>
+          <table class="table tableSize tableVis1" style="margin-top: 6.5em; width:40.5em;">
+            <thead class="textColor" style="background-color: #18ad31;">
+              <tr style="font-size: 1.4em;">
+                <th scope="col" class="animated fadeIn wow" data-wow-delay="0.1s">Fixture</th>
+                <th scope="col" class="animated fadeIn wow" data-wow-delay="0.2s">Nature of Job</th>
+                <th scope="col" class="animated fadeIn wow" data-wow-delay="0.3s">Average Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="animated fadeIn wow" data-wow-delay="0.1s">Dishwasher</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.2s">Repairs<br>Replacement</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.3s">150-425$<br>125-225$</td>
+              </tr>
+              <tr>
+                <td class="animated fadeIn wow" data-wow-delay="0.2s">Garbage Disposal</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.3s">Repairs<br>Replacement</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.4s">50-135$<br>75-100$</td>
+              </tr>
+              <tr>
+                <td class="animated fadeIn wow" data-wow-delay="0.2s">Furnace<br>Boiler<br>Heat Pump</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.3s">Repairs<br>Replacement</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.4s">150-550$<br>2,250-6,000$</td>
+              </tr>
+              <tr>
+                <td class="animated fadeIn wow" data-wow-delay="0.3s">Water Heaters</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.4s">Repairs<br>Replacement</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.5s">125-175$<br>850-1,650$</td>
+              </tr>
+              <tr>
+                <td class="animated fadeIn wow" data-wow-delay="0.3s">Washing Machine and/or Dryer</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.4s">Repairs<br>Replacement</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.5s">125-450$<br>375-1,400$</td>
+              </tr>
+              <tr>
+                <td class="animated fadeIn wow" data-wow-delay="0.3s">Roof Leaks</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.4s">Repairs</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.5s">150-350$</td>
+              </tr>
+            </tbody>
+          </table>
+            <!-- adapt -->
+        <div class="tableVis2">
+          <table class="table tableWidth" style="margin-top: 6.5em; width:100%">
+            <thead class="textColor" style="background-color: #18ad31;">
+              <tr style="font-size: 1.4em;">
+                <th scope="col" class="animated fadeIn wow" data-wow-delay="0.1s">Fixture</th>
+                <th scope="col" class="animated fadeIn wow" data-wow-delay="0.2s">Nature of Job</th>
+                <th scope="col" class="animated fadeIn wow" data-wow-delay="0.3s">Average Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="animated fadeIn wow" data-wow-delay="0.1s">Dishwasher</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.2s">Repairs<br>Replacement</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.3s">150-425$<br>125-225$</td>
+              </tr>
+              <tr>
+                <td class="animated fadeIn wow" data-wow-delay="0.1s">Garbage Disposal</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.2s">Repairs<br>Replacement</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.3s">50-135$<br>75-100$</td>
+              </tr>
+              <tr>
+                <td class="animated fadeIn wow" data-wow-delay="0.1s">Furnace<br>Boiler<br>Heat Pump</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.2s">Repairs<br>Replacement</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.3s">150-550$<br>2,250-6,000$</td>
+              </tr>
+              <tr>
+                <td class="animated fadeIn wow" data-wow-delay="0.1s">Water Heaters</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.2s">Repairs<br>Replacement</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.3s">125-175$<br>850-1,650$</td>
+              </tr>
+              <tr>
+                <td class="animated fadeIn wow" data-wow-delay="0.1s">Washing Machine and/or Dryer</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.2s">Repairs<br>Replacement</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.3s">125-450$<br>375-1,400$</td>
+              </tr>
+              <tr>
+                <td class="animated fadeIn wow" data-wow-delay="0.2s">Roof Leaks</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.3s">Repairs</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.4s">150-350$</td>
+              </tr>
+              <tr>
+                <td class="animated fadeIn wow" data-wow-delay="0.2s">Hot Tub<br>Spa<br>Pool</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.3s">Repairs</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.4s">225-2,200$</td>
+              </tr>
+              <tr>
+                <td class="animated fadeIn wow" data-wow-delay="0.2s">Septic Tank</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.3s">Clean Out</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.4s">350-750$</td>
+              </tr>
+              <tr>
+                <td class="animated fadeIn wow" data-wow-delay="0.2s">Pinhole in Copper Pipe</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.3s">Repairs</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.4s">200-300$</td>
+              </tr>
+              <tr>
+                <td class="animated fadeIn wow" data-wow-delay="0.2s">Dripping Faucet</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.3s">Repairs<br>Replacement</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.4s">40-80$<br>45-100$</td>
+              </tr>
+              <tr>
+                <td class="animated fadeIn wow" data-wow-delay="0.3s">Slab Leak</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.4s">Repairs</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.5s">300-500$</td>
+              </tr>
+              <tr>
+                <td class="animated fadeIn wow" data-wow-delay="0.3s">Clogged Drain</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.4s">Repairs</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.5s">100-150$</td>
+              </tr>
+              <tr>
+                <td class="animated fadeIn wow" data-wow-delay="0.3s">Broken CPVC/Plastic Water Line</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.4s">Repairs</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.5s">80-150$</td>
+              </tr>
+              <tr>
+                <td class="animated fadeIn wow" data-wow-delay="0.3s">Broken Drain Line</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.4s">Materials + Installation</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.5s">125-250$</td>
+              </tr>
+              <tr>
+                <td class="animated fadeIn wow" data-wow-delay="0.3s">Toilet</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.4s">Unclog<br>Flush mechanism<br>Replace<br>Replace seal<br>Repair leaks (+ materials)</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.5s">125-250$<br>125-200$<br>400$<br>125-250$<br>85-120$</td>
+              </tr>
+              <tr>
+                <td class="animated fadeIn wow" data-wow-delay="0.4s">Bathtub</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.5s">Replace-retile</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.6s">2,500$</td>
+              </tr>
+              <tr>
+                <td class="animated fadeIn wow" data-wow-delay="0.4s">Shower</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.5s">shower stall-plastic<br>shower stall-ceramic tile<br>shower connection</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.6s">900-1,900$<br>2,500-3,000$<br>250$</td>
+              </tr>
+              <tr>
+                <td style="width: 46.6%;" class="animated fadeIn wow" data-wow-delay="0.4s">Basic hourly rates (not including additional expenses such as travel, time on road, plumbing parts, etc)</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.5s">Journeyman Plumber<br>Master Plumber<br>Apprentice Plumber<br>Plumber</td>
+                <td class="animated fadeIn wow" data-wow-delay="0.6s">20.75$<br>23.58$<br>14.03$<br>18.44$</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- adapt end -->
+          <div id="calculator" class="mt-5 calcSize animated slideInLeft wow" data-wow-duration="1.6s">
+            <div class="row">
+                <input id="display" type="text">
+            </div>
+            <div class="row mt-4">
+                <button onclick="press('7')" class="buttonSize">7</button>
+                <button onclick="press('8')" class="buttonSize">8</button>
+                <button onclick="press('9')" class="buttonSize">9</button>
+                <button onclick="press('+')" class="buttonSize">+</button>
+            </div>
+            <div class="row">
+                <button onclick="press('4')" class="buttonSize">4</button>
+                <button onclick="press('5')" class="buttonSize">5</button>
+                <button onclick="press('6')" class="buttonSize">6</button>
+                <button onclick="press('-')" class="buttonSize">-</button>
+            </div>
+            <div class="row">
+                <button onclick="press('1')" class="buttonSize">1</button>
+                <button onclick="press('2')" class="buttonSize">2</button>
+                <button onclick="press('3')" class="buttonSize">3</button>
+                <button onclick="press('*')" class="buttonSize">*</button>
+            </div>
+            <div class="row">
+                <button onclick="clear1()" class="buttonSize">C</button>
+                <button onclick="press('0')" class="buttonSize">0</button>
+                <button onclick="calc()" class="buttonSize">=</button>
+                <button onclick="press('/')" class="buttonSize">/</button>
+            </div>
+          </div>
+        </div>
+        
+        <table class="table tableSize tableVis1" style="margin-top: 6.5em; width:40.5em;">
+          <thead class="textColor" style="background-color: #18ad31;">
+            <tr style="font-size: 1.4em;">
+              <th scope="col" class="animated fadeIn wow" data-wow-delay="0.1s">Fixture</th>
+              <th scope="col" class="animated fadeIn wow" data-wow-delay="0.2s">Nature of Job</th>
+              <th scope="col" class="animated fadeIn wow" data-wow-delay="0.3s">Average Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="animated fadeIn wow" data-wow-delay="0.1s">Hot Tub<br>Spa<br>Pool</td>
+              <td class="animated fadeIn wow" data-wow-delay="0.2s">Repairs</td>
+              <td class="animated fadeIn wow" data-wow-delay="0.3s">225-2,200$</td>
+            </tr>
+            <tr>
+              <td class="animated fadeIn wow" data-wow-delay="0.1s">Septic Tank</td>
+              <td class="animated fadeIn wow" data-wow-delay="0.2s">Clean Out</td>
+              <td class="animated fadeIn wow" data-wow-delay="0.3s">350-750$</td>
+            </tr>
+            <tr>
+              <td class="animated fadeIn wow" data-wow-delay="0.2s">Pinhole in Copper Pipe</td>
+              <td class="animated fadeIn wow" data-wow-delay="0.3s">Repairs</td>
+              <td class="animated fadeIn wow" data-wow-delay="0.4s">200-300$</td>
+            </tr>
+            <tr>
+              <td class="animated fadeIn wow" data-wow-delay="0.2s">Dripping Faucet</td>
+              <td class="animated fadeIn wow" data-wow-delay="0.3s">Repairs<br>Replacement</td>
+              <td class="animated fadeIn wow" data-wow-delay="0.4s">40-80$<br>45-100$</td>
+            </tr>
+            <tr>
+              <td class="animated fadeIn wow" data-wow-delay="0.2s">Slab Leak</td>
+              <td class="animated fadeIn wow" data-wow-delay="0.3s">Repairs</td>
+              <td class="animated fadeIn wow" data-wow-delay="0.4s">300-500$</td>
+            </tr>
+            <tr>
+              <td class="animated fadeIn wow" data-wow-delay="0.3s">Clogged Drain</td>
+              <td class="animated fadeIn wow" data-wow-delay="0.4s">Repairs</td>
+              <td class="animated fadeIn wow" data-wow-delay="0.5s">100-150$</td>
+            </tr>
+            <tr>
+              <td class="animated fadeIn wow" data-wow-delay="0.3s">Broken CPVC/Plastic Water Line</td>
+              <td class="animated fadeIn wow" data-wow-delay="0.4s">Repairs</td>
+              <td class="animated fadeIn wow" data-wow-delay="0.5s">80-150$</td>
+            </tr>
+            <tr>
+              <td class="animated fadeIn wow" data-wow-delay="0.3s">Broken Drain Line</td>
+              <td class="animated fadeIn wow" data-wow-delay="0.4s">Materials + Installation</td>
+              <td class="animated fadeIn wow" data-wow-delay="0.5s">125-250$</td>
+            </tr>
+            <tr>
+              <td class="animated fadeIn wow" data-wow-delay="0.4s">Toilet</td>
+              <td class="animated fadeIn wow" data-wow-delay="0.5s">Unclog<br>Flush mechanism<br>Replace<br>Replace seal<br>Repair leaks (+ materials)</td>
+              <td class="animated fadeIn wow" data-wow-delay="0.6s">125-250$<br>125-200$<br>400$<br>125-250$<br>85-120$</td>
+            </tr>
+            <tr>
+              <td class="animated fadeIn wow" data-wow-delay="0.4s">Bathtub</td>
+              <td class="animated fadeIn wow" data-wow-delay="0.5s">Replace-retile</td>
+              <td class="animated fadeIn wow" data-wow-delay="0.6s">2,500$</td>
+            </tr>
+            <tr>
+              <td class="animated fadeIn wow" data-wow-delay="0.4s">Shower</td>
+              <td class="animated fadeIn wow" data-wow-delay="0.5s">shower stall-plastic<br>shower stall-ceramic tile<br>shower connection</td>
+              <td class="animated fadeIn wow" data-wow-delay="0.6s">900-1,900$<br>2,500-3,000$<br>250$</td>
+            </tr>
+            <tr>
+              <td style="width: 46.6%;" class="animated fadeIn wow" data-wow-delay="0.4s">Basic hourly rates (not including additional expenses such as travel, time on road, plumbing parts, etc)</td>
+              <td class="animated fadeIn wow" data-wow-delay="0.5s">Journeyman Plumber<br>Master Plumber<br>Apprentice Plumber<br>Plumber</td>
+              <td class="animated fadeIn wow" data-wow-delay="0.6s">20.75$<br>23.58$<br>14.03$<br>18.44$</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      <!-- end prices -->
+      <!--start testimonials-->
+      <div class="pt-5" id="Contact">
+        <div class="text-center mb-4 animated fadeIn wow" data-wow-delay="0.2s" style="line-height: 1.3em;"><!--title -->
+          <span class="textColorSecond fw-bold" style="font-size: 2.4em;">CONTACT US</span> <br>
+          <span style="font-size: 1em;">We're really waiting for your call</span>
+        </div>
+        <div class="d-flex justify-content-between justifyCenter flex-wrap"><!--content-->
+          <div class="text-center flexWrap">
+            <div class="imgWidth text-center m-auto mar animated fadeInLeft wow" data-wow-delay="0.2s">
+              <img src="./img/phone.png" alt="" class="imgWidth" style="width:9em;">
+              <p class="textColorSecond mb-3" style="font-size: 1.8em;"><a href="">+1212412412</a></p>
+            </div>
+            <div class="imgWidth text-center m-auto animated fadeInLeft wow" data-wow-delay="0.4s">
+              <img src="./img/email.png" alt="" class="imgWidth" style="width:9em;">
+              <p class="textColorSecond mb-3" style="font-size: 1.8em;"><a href="">example@mal.co</a></p>
+            </div>
+          </div>
+          <div class="mb-3 mapWidth animated fadeInRight wow" data-wow-delay="0.3s"><!--name-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90188.25767463674!2d38.92763454643689!3d45.05774009567778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f04564714535b3%3A0xf720794f56c4beb6!2z0JrRgNCw0YHQvdC-0LTQsNGALCDQmtGA0LDRgdC90L7QtNCw0YDRgdC60LjQuSDQutGA0LDQuSwg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2skz!4v1656912357069!5m2!1sru!2skz" class="mapWidth" style="height: 26em;"></iframe>
+          </div>
+        </div>
+      <!--end testimonials-->
+      </div>
+    <!--start footer-->
+    <div class="w-100 text-center mainColor footerHeight" style="height: 2.4em;">
+      <p>Plumbing Company &copy; 2022 All rigts are reserved</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="./js/particles.js"> </script>
+    <script src="./js/app.js"> </script>
+    <!--end footer-->
+</body>
+</html>
